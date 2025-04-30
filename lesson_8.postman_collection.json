@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "e7240275-8a4a-40af-80e7-c61b373d9f8e",
-		"name": "7-oy.8-dars",
+		"_postman_id": "bcfbcf1e-95aa-46c6-a570-c2a6c6622991",
+		"name": "lesson_8",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "40691173"
+		"_exporter_id": "40604633"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"Tohirjon06\",\r\n    \"email\":\"tohirjon@gmail.com\",\r\n    \"password\":\"1234\",\r\n    \"full_name\":\"Tohirjon\",\r\n    \"role\":\"admin\"\r\n}",
+					"raw": "{\r\n    \"username\":\"Asliddin1523\",\r\n    \"email\":\"theAsliddin2311@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"full_name\":\"Asliddin\",\r\n    \"role\":\"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,13 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/users/login",
+					"raw": "http://localhost:4000/api/users/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
 						"login"
 					]
@@ -42,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userName\":\"Tohirjon06\",\r\n    \"password\":\"1234\"\r\n}",
+					"raw": "{\r\n    \"userName\":\"Asliddin23\",\r\n    \"password\":\"12345\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -50,13 +51,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/users/register",
+					"raw": "http://localhost:4000/api/users/register",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
 						"register"
 					]
@@ -70,13 +72,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/users/profile",
+					"raw": "http://localhost:4000/api/users/profile",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
 						"profile"
 					]
@@ -119,13 +122,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/posts/create",
+					"raw": "http://localhost:4000/api/posts/create",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"posts",
 						"create"
 					]
@@ -139,13 +143,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/posts",
+					"raw": "http://localhost:4000/api/posts",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"posts"
 					]
 				}
@@ -153,20 +158,21 @@
 			"response": []
 		},
 		{
-			"name": "get_post_by_id",
+			"name": "get_post_id",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/posts/4",
+					"raw": "http://localhost:4000/api/posts/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"posts",
-						"4"
+						"1"
 					]
 				}
 			},
@@ -179,7 +185,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"Post ozgartirildi\",\r\n    \"content\":\"Xatolik yoq\"\r\n}",
+					"raw": "{\r\n    \"title\":\"The post has been modified\",\r\n    \"content\":\"code is working\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -187,13 +193,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/posts/update/2",
+					"raw": "http://localhost:4000/api/posts/update/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"posts",
 						"update",
 						"2"
@@ -208,13 +215,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/posts/delete/2",
+					"raw": "http://localhost:4000/api/posts/delete/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"posts",
 						"delete",
 						"2"
@@ -229,13 +237,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/users/admin",
+					"raw": "http://localhost:4000/api/users/admin",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
 						"admin"
 					]
@@ -244,21 +253,22 @@
 			"response": []
 		},
 		{
-			"name": "delete_user_by_id",
+			"name": "del_user_id",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/users/admin/5",
+					"raw": "http://localhost:4000/api/users/admin/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
 						"admin",
-						"5"
+						"1"
 					]
 				}
 			},
